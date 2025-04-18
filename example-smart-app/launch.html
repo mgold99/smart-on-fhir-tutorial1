@@ -27,7 +27,9 @@
     <script>
       FHIR.oauth2.authorize({
         'client_id': '0cba3f06-1442-44b6-9e19-8cb58a27917b',
-        'scope':  'patient/Patient.read patient/Observation.read launch launch/patient openid fhirUser'
+        'scope':  'patient/Patient.read patient/Observation.read launch launch/patient openid fhirUser',
+        'iss': 'https://g2fhir.mckesson.com/xfhir',
+        'redirect_uri': 'index.html'
       });
     </script>
     <div class="spinner">
