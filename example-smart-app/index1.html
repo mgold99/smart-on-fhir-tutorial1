@@ -27,7 +27,17 @@
             <pre id="output">Loading...</pre>
         </div>
         <script type="text/javascript">
+            window.FHIR.oauth2.settings.fullSessionStorageSupport = false;
             FHIR.oauth2.ready().then(function(client) {
+                
+            try {
+                smartState = JSON.parse(sessionStorage.getItem(params.get("state")));
+                const idToken = jwtDecode(smartState.tokenResponse.id_token);
+                window.idToken = idToken;
+              } catch (error) {
+                console.error("SMART ERROR...", error);
+              }
+
                 var app = new App(client);
                 app.renderContext();
                 app.request("metadata");
