@@ -32,6 +32,7 @@
                 
             try {
                 smartState = JSON.parse(sessionStorage.getItem(params.get("state")));
+                console.log(smartState);
                 const idToken = jwtDecode(smartState.tokenResponse.id_token);
                 window.idToken = idToken;
               } catch (error) {
