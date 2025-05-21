@@ -113,7 +113,13 @@
                           $('#errors').html('<p> Failed to call FHIR Service </p>');
                         }
                   );
-            }).catch(createRenderer("output"));
+            }).catch(
+        function() {
+          $('#loading').hide();
+          $('#errors').html('<p> Failed to call FHIR Service </p>');
+        }
+              
+            );
       /*extractData().then(
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
