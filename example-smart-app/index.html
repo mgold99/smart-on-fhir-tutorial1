@@ -85,7 +85,7 @@
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-          window.FHIR.oauth2.settings.fullSessionStorageSupport = false;
+          /*window.FHIR.oauth2.settings.fullSessionStorageSupport = false;
             FHIR.oauth2.ready().then(function(client) {
                 
             try {
@@ -119,8 +119,8 @@
           $('#errors').html('<p> Failed to call FHIR Service </p>');
         }
               
-            );
-      /*extractData().then(
+            );*/
+      extractData().then(
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
           drawVisualization(p);
@@ -131,7 +131,7 @@
           $('#loading').hide();
           $('#errors').html('<p> Failed to call FHIR Service </p>');
         }
-      );*/
+      );
     </script>
   </body>
 </html>
