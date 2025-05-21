@@ -27,18 +27,11 @@
             <pre id="output">Loading...</pre>
         </div>
         <script type="text/javascript">
-      extractData().then(
-        //Display Patient Demographics and Observations if extractData was success
-        function(p) {
-          drawVisualization(p);
-        },
-
-        //Display 'Failed to call FHIR Service' if extractData failed
-        function() {
-          $('#loading').hide();
-          $('#errors').html('<p> Failed to call FHIR Service </p>');
-        }
-      );
+            FHIR.oauth2.ready().then(function(client) {
+                var app = new App(client);
+                app.renderContext();
+                app.request("metadata");
+            }).catch(createRenderer("output"));
             /*window.FHIR.oauth2.settings.fullSessionStorageSupport = false;
             FHIR.oauth2.ready().then(function(client) {
                 
