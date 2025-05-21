@@ -58,16 +58,18 @@
         var clientId = '14de6c9f-0e2b-4043-9dbd-5eb5581c6112';
         //var scope = urlParam("scope");
         var scope = ['patient/Patient.read', 'patient/Observation.read', 'launch', 'launch/patient', 'openid', 'fhirUser'].join(" ")
-        var secret = urlParam("secret");
+        //var secret = urlParam("secret");
         
         if (scope) {
           scope = decodeURIComponent(scope);
         }
         
         var result = {
+          iss: iss,
           client_id: clientId,
           scope: scope || "fhirUser openid",
           completeInTarget: true,
+          redirectUri: 'index1.html'
         };
         
         if (secret) {
