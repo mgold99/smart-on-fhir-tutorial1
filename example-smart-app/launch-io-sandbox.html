@@ -25,14 +25,13 @@
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script>
-        /*FHIR.oauth2.authorize({
+        FHIR.oauth2.authorize({
         clientId: '14de6c9f-0e2b-4043-9dbd-5eb5581c6112',
         scope:  ['patient/Patient.read', 'patient/Observation.read', 'launch', 'launch/patient', 'openid', 'fhirUser'].join(" "),
-        iss: 'https://interopio.ontada.com/gateway/fhir/developerportalio/portal/gw-fhir',
         redirectUri: 'index1.html',
         completeInTarget: true
-      });*/
-        function urlParam(p) {
+      });
+        /*function urlParam(p) {
           var query = location.search.substr(1);
           var data = query.split("&");
           var result = [];
@@ -73,11 +72,11 @@
         
        /* if (secret) {
           result.clientSecret = secret;
-        }*/
+        }
         
       FHIR.oauth2.settings.fullSessionStorageSupport = false;
       console.log(result);
-      FHIR.oauth2.authorize(result);
+      FHIR.oauth2.authorize(result);*/
     </script>
     <div class="spinner">
       <div class="bounce1"></div>
