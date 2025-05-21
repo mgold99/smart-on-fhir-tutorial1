@@ -65,11 +65,10 @@
         }
         
         var result = {
-          //iss: iss,//adding iss causes the 500 it seems
           client_id: clientId,
           scope: scope || "fhirUser openid",
           completeInTarget: true,
-          redirectUri: 'index1.html' //adding 'index1.html also causes the 500 it seems
+          //redirectUri: 'index1.html' //adding 'index1.html also causes the 500 it seems
           //redirectUri: 'https://mgold99.github.io/smart-on-fhir-tutorial1/example-smart-app/index1.html'
         };
         
