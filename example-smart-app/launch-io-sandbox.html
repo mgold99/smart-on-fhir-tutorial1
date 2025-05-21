@@ -65,11 +65,11 @@
         }
         
         var result = {
-          //iss: iss,
+          iss: iss,
           client_id: clientId,
           scope: scope || "fhirUser openid",
           completeInTarget: true,
-          //redirectUri: 'index1.html'
+          //redirectUri: 'index1.html' //adding 'index1.html causes the 500 it seems
         };
         
         if (secret) {
