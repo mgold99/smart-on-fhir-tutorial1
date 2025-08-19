@@ -4,7 +4,7 @@
       "alg": "RS384",
       "e": "AQAB",
       "key_ops": [
-        "sign"
+        "verify"
       ],
       "kid": "mg-key-id",
       "kty": "RSA",
