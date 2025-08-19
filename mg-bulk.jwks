@@ -1,0 +1,10 @@
+{
+  "keys": [
+    {
+      "e": "AQAB",
+      "kid": "mg-key-id",
+      "kty": "RSA",
+      "n": "qXHRHS4U8VsTGaiGDEdg2_eDGB002p36R1ZjCX2ZbKLmVQV0p7NQ8e6FjCe0XDx1j4NkafoXMKx3adlYrMiNCqKu41aZlJMxnKDeiJrtxTgnTtoHZ4VLq_OXp5_NOQd1qTjW52sicQy4l8QtxeybWzy7Pyd2KCmJ2-SMQIZWls-UBIXmIfevDdQMio-ep8OE7I3ChjKuCZWqkvIHFD3NFyhPKzXe9sP5Dnpax_lKYC1TqYN_Lol8b4_9TKtgjYE6XYYOi4X3Qa7LXr6vtrCpSSjNkoCPUSvzboUKCRGDRnqEGbjymeXl-v8hzVZ7FNcfN1qFy4MYjw2IwBi63JcwSw"
+    }
+  ]
+}
